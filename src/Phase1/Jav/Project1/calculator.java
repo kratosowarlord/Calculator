@@ -16,7 +16,8 @@ public class calculator {
 				"2. Subtraction (-) \n" +
 				"3. Multiplication (*) \n" +
 				"4. Division (/) \n");
-
+		
+		//Using scanner to take input
 
 		Scanner scanner = new Scanner(System.in);
 		
