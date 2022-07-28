@@ -53,9 +53,9 @@ public class calculator {
 			System.out.println(number1 + " x " + number2 + " = " + (number1 * number2));
 		} else if (operation == '/') {
 			System.out.println(number1 + " / " + number2 + " = " + (number1 / number2));
-		} else {
-			System.err.println("Invalid Operator Specified.");
-		}
+		}// else {
+		//	System.err.println("Invalid Operator Specified.");
+	//	}
 
 		
 		scanner.close();

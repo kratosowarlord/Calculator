@@ -1,7 +1,6 @@
 package Phase1.Jav.Project2;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class emailValidation {
 
@@ -9,52 +8,31 @@ public class emailValidation {
 
 		Scanner scr = new Scanner(System.in);
 
-		ArrayList<String> emailCheck = new ArrayList<String>();
+		String[] stringArray = new String[] { "karan1@gmail.com", "karan2@gmail.com", "karan3@gmail.com",
+				"karan4@gmail.com", "karan5@gmail.com" };
+		boolean found = false;
 
-//		System.out.println("Enter the Email Id's for the List");
-		
-		// Array list of Email.
+		System.out.println("Enter the email to be looked up");
+		String searchedValue = scr.next();
 
-		emailCheck.add("karan1@gmail.com");
-		emailCheck.add("karan2@gmail.com");
-		emailCheck.add("karan3@gmail.com");
-		emailCheck.add("karan4@gmail.com");
-		emailCheck.add("karan5@gmail.com");
-		////		emailID.add(scr.next());
-		////		emailID.add(scr.next());
-		
-
-		System.out.println("Enter the email to be searched");
-		
-		
-		// Taking User Input from Scanner
-		
-		
-		String searchId = scr.nextLine();
-
-		for (int i = 0; i < emailCheck.size(); i++) {
-
-			if (searchId.contains(emailCheck.get(i))) {
-
-				System.out.println("email ID - " + searchId + "   found");
-			}
-
-			else if(searchId !=emailCheck.get(i)) {
-
-					System.out.println("The email " +searchId + " is invalid!");
-				}
+		for (String x : stringArray) {
+			if (x.equals(searchedValue)) {
+				found = true;
 
 				break;
 
 			}
-		
-		scr.close();
-		
 		}
 
+		if (found == true) {
 
-		
+			System.out.println("This is a valid email");
+		} else {
+
+			System.out.println("This is an inavlid email");
+		}
+
+		System.out.println();
 
 	}
-
-
+}
