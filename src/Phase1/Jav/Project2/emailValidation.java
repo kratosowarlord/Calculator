@@ -33,6 +33,8 @@ public class emailValidation {
 		}
 
 		System.out.println();
+		
+		scr.close();
 
 	}
 }
