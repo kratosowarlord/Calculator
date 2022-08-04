@@ -7,7 +7,7 @@ public class ReadFile {
 	public static void main(String[] args) {
 		
 		
-		 char[] array = new char[60];
+		 char[] array = new char[100];
 		    
 		    try {
 		      // Step 1: Creates a reader using the FileReader
